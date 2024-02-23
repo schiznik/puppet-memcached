@@ -3,7 +3,7 @@
 # Run memcached as a daemon.
 -d
 
-<% if @pidfile -%>
+<% if @use_pidfile -%>
 # pidfile
 -P <%= @pidfile %>
 <% end -%>

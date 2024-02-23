@@ -13,7 +13,8 @@ class memcached (
   Optional[Stdlib::Absolutepath] $logfile                                                    = $memcached::params::logfile,
   Boolean $logstdout                                                                         = false,
   Boolean $syslog                                                                            = false,
-  Optional[Variant[Stdlib::Absolutepath, Undef]] $pidfile                                    = '/var/run/memcached.pid',
+  Boolean $use_pidfile                                                                       = true
+  Variant[Stdlib::Absolutepath, Undef] $pidfile                                              = '/var/run/memcached.pid',
   Boolean $manage_firewall                                                                   = false,
   $max_memory                                                                                = '95%',
   Optional[Variant[Integer, String]] $max_item_size                                          = undef,

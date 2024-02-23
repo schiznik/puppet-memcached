@@ -14,7 +14,7 @@ class memcached::params {
       $logfile           = '/var/log/memcached.log'
       $use_registry      = false
       $use_svcprop       = false
-      $pidfile           = undef
+      $use_pidfile       = false
     }
     /RedHat|Suse/: {
       $package_name      = 'memcached'
