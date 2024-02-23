@@ -116,7 +116,7 @@ memcached::instance{'11222':
 * $package_ensure = 'present'
 * $logfile = '/var/log/memcached.log'
 * $logstdout = false (Set this to true to disable logging to a file/syslog entirely, useful when memcached runs in containers)
-* $pidfile = '/var/run/memcached.pid' (Debian family only, set to false to disable pidfile)
+* $pidfile = '/var/run/memcached.pid' (Debian family only, set $use_pidfile to false to disable pidfile)
 * $max_memory = false
 * $max_item_size = false
 * $min_item_size = false
